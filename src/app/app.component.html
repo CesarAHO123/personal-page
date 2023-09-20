@@ -3,6 +3,11 @@
   <mat-drawer #drawer class="nav-sidenav" mode="side">
 
     <div class="nav-sidenav-header">
+      <a href="/" class="nav-sidenav-logo">
+        <div class="logo-container">
+          <img class="logo" src="assets/CALE_Logo.png" alt="Logo">
+        </div>
+      </a>
       <a href="#" class="nav-sidenav-close" (click)="drawer.toggle()">
         <mat-icon >close</mat-icon>
       </a>
@@ -10,29 +15,26 @@
 
     <div class="nav-sidenav-body">
       <mat-nav-list>
-        <a mat-list-item href="#">Inicio.</a>
-        <a mat-list-item href="#">Proyectos.</a>
-        <a mat-list-item href="#">Curriculum vitae.</a>
-        <a mat-list-item href="#">Redes sociales.</a>
+        <a mat-list-item href="/">Inicio.</a>
+        <a mat-list-item href="/projects">Proyectos.</a>
+        <a mat-list-item href="/exp">Experiencia.</a>
+        <a mat-list-item href="/socials">Redes sociales.</a>
       </mat-nav-list>
     </div>
   </mat-drawer>
 
   <div class="nav-sidenav-content">
 
+    <button class="side-button" mat-mini-fab color="primary" (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
 
-  <div style="display: flex;">
-    <div class="spacer" style="width: 10%;">
-    </div>
+  <div style="width: 100%;">
     <div class="content" >
-      <button class="side-button" mat-mini-fab color="primary" (click)="drawer.toggle()">
-        <mat-icon>menu</mat-icon>
-      </button>
+      <div style="width: 100%;padding:0px;margin:0px;background-color:#c5c6c8;min-height: 3vh;">
 
-
+      </div>
       <router-outlet></router-outlet>
-    </div>
-    <div class="spacer" style="width: 10%;">
     </div>
     </div>
 
