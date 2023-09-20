@@ -5,7 +5,7 @@
   margin: 0 ;
   padding-left: 10%;
   max-height: 50vh;
-  bottom:0px;
+  bottom: 0;
 
 }
 .logo
@@ -13,41 +13,51 @@
   max-width: 50%;
   max-height: 20vh;
 }
-.container
+.main-container
 {
   padding: 0px;
   margin:0px;
-  background: linear-gradient(#c5c6c8,20%, #84b6f4);
+  background: linear-gradient(#c5c6c8,10%, #84b6f4);
   width: 100%;
   display: flex;
+  flex-direction: row;
+  font-weight: bold;
 }
 .photo-container
 {
-  width: 40%;
-  align-items: right;
+  display: flex;
+  align-items: center;
   margin-left: auto;
+  justify-content: center;
+  flex:1;
 }
 .description-container
 {
-  width: 30%;
   margin-right: auto;
-  align-items: left;
+  padding: 0 20% 0 5%;
+  align-items: start;
+  flex:1;
 }
 @media screen and (max-width: 767px) {
+  .main-container
+{
+ flex-direction: column;
+}
   .photo-container
 {
   width: 100%;
   align-items: right;
   margin: 0 auto;
 }
+
   .my-photo
   {
-    max-width: 80%;
+    width: 50vh;
     align-items: center;
     margin: 0 ;
     padding-left: 10%;
     padding-right: 10%;
-
+    border-radius: 50%;
   }
   .description-container
 {
