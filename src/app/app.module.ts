@@ -10,11 +10,15 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import { MainPageComponent } from './main-page/main-page.component';
+import { ExperiencePageComponent } from './experience-page/experience-page.component';
+import { ProjectsPageComponent } from './projects-page/projects-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainPageComponent
+    MainPageComponent,
+    ExperiencePageComponent,
+    ProjectsPageComponent
   ],
   imports: [
     BrowserModule,

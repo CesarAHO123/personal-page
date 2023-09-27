@@ -1,21 +1,29 @@
+*{
+  font-family: "Arial", "Helvetica", sans-serif;
+}
 .my-photo
 {
-  max-width: 70%;
+  max-width: 100%;
   margin: 0 ;
-  padding-left: 10%;
-  max-height: 50vh;
+
+  max-height: 80vh;
   bottom: 0;
 position: absolute;
 }
 
 .logo
 {
-  max-width: 50%;
-  max-height: 20vh;
+  max-width: 70%;
+  max-height: 30vh;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 .main-container
 {
   padding: 0px;
+  height: 97vh;
   margin:0px;
   background: linear-gradient(#c5c6c8,10%, #84b6f4);
   width: 100%;
@@ -25,6 +33,7 @@ position: absolute;
 }
 .photo-container
 {
+  min-width: 50%;
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -35,34 +44,18 @@ position: absolute;
 .description-container
 {
   margin-right: auto;
-  padding: 0 20% 0 5%;
-  align-items: start;
+  padding: 0 10% 0 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex:1;
 }
 .know-button
 {
-  margin: 1%;
+  margin-bottom: 1%;
 }
-.container{
-  width: 100%;
-  align-items: center;
-  display: flex;
-}
-.tech-container
-{
-  width: 20%;
-  align-items: center;
-  margin: auto;
-}
-.tech-photo
-{
-  max-width: 50%;
-  margin: auto;
-  padding: 0%;
-  max-height: 50vh;
-  bottom: 0;
 
-}
+
 @media screen and (max-width: 767px) {
   .main-container
 {
