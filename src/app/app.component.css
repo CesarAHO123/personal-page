@@ -24,6 +24,7 @@
   left:5%;
   top:5vh;
   position: fixed;
+  z-index: 100;
 }
 .logo
 {

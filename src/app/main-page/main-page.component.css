@@ -1,13 +1,13 @@
 .my-photo
 {
   max-width: 70%;
-  align-items: right;
   margin: 0 ;
   padding-left: 10%;
   max-height: 50vh;
   bottom: 0;
-
+position: absolute;
 }
+
 .logo
 {
   max-width: 50%;
@@ -29,6 +29,7 @@
   align-items: center;
   margin-left: auto;
   justify-content: center;
+  position: relative;
   flex:1;
 }
 .description-container
@@ -37,6 +38,30 @@
   padding: 0 20% 0 5%;
   align-items: start;
   flex:1;
+}
+.know-button
+{
+  margin: 1%;
+}
+.container{
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+.tech-container
+{
+  width: 20%;
+  align-items: center;
+  margin: auto;
+}
+.tech-photo
+{
+  max-width: 50%;
+  margin: auto;
+  padding: 0%;
+  max-height: 50vh;
+  bottom: 0;
+
 }
 @media screen and (max-width: 767px) {
   .main-container
