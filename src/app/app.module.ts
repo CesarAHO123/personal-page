@@ -12,7 +12,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ExperiencePageComponent } from './experience-page/experience-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
-
+import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +28,8 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
     MatListModule,
     MatIconModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
